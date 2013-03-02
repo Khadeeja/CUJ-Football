@@ -16,7 +16,6 @@ url = prefix+suffix
 #read the data
 
 data = urlopen(url).read()
-
 from json import loads
 response = loads(data)
 tweets = response["results"] 
