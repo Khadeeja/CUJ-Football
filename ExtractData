@@ -22,6 +22,9 @@ tweets = response["results"]
 
 #isolate the text of the tweets from the data
 
+tweetlist = []
+
 for t in tweets:
 if t["text"]:
 tweetText = t["text"]
+tweetlist.append(tweet)
