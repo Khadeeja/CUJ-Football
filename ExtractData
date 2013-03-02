@@ -24,4 +24,4 @@ tweets = response["results"]
 
 for t in tweets:
 if t("text"):
-tweet = t["text"]
+tweetText = t["text"]
