@@ -10,7 +10,7 @@ prefix = "http://search.twitter.com/search.json"
 urlencode ({"q":"#thfcvafc"})
 urlencode ({"q":"#thfcvafc","rpp":100})
 urlencode ({"q":"#thfcvafc","rpp":100,"result_type":"recent"})
-suffix = "?"+ urlencode({"q":"#thfcvafc","rpp":100,"result_type":"recent"})
+suffix = "?"+ urlencode({"q":"#thfcvafc","rpp":500,"result_type":"recent"})
 url = prefix+suffix
 
 #read the data
@@ -27,4 +27,4 @@ tweetlist = []
 for t in tweets:
 if t["text"]:
 tweetText = t["text"]
-tweetlist.append(tweet)
+tweetlist.append(tweetText)
