@@ -21,4 +21,8 @@ from json import loads
 response = loads(data)
 tweets = response["results"] 
 
+#isolate the text of the tweets from the data
 
+for t in tweets:
+if t("text"):
+tweet = t["text"]
