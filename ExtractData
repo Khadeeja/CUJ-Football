@@ -5,9 +5,9 @@ from urllib import urlencode
 #create a url to look for the last 100 search results with #thfcvafc
 
 prefix = "http://search.twitter.com/search.json"
-urlencode = ({"q":"#thfcvafc"})
-urlencode = ({"q":"#thfcvafc","rpp":100})
-urlencode({"q":"#thfcvafc","rpp":100,"result_type":"recent"})
+urlencode ({"q":"#thfcvafc"})
+urlencode ({"q":"#thfcvafc","rpp":100})
+urlencode ({"q":"#thfcvafc","rpp":100,"result_type":"recent"})
 suffix = "?"+ urlencode({"q":"#thfcvafc","rpp":100,"result_type":"recent"})
 url = prefix+suffix
 
