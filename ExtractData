@@ -23,5 +23,5 @@ tweets = response["results"]
 #isolate the text of the tweets from the data
 
 for t in tweets:
-if t("text"):
+if t["text"]:
 tweetText = t["text"]
