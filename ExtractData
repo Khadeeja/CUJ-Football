@@ -7,7 +7,8 @@ from urllib import urlopen
 prefix = "http://search.twitter.com/search.json"
 urlencode = ({"q":"#thfcvafc"})
 urlencode = ({"q":"#thfcvafc","rpp":100})
-suffix = "?"+ urlencode({"q":"#thfcvafc","rpp":100})
+urlencode({"q":"#thfcvafc","rpp":100,"result_type":"recent"})
+suffix = "?"+ urlencode({"q":"#thfcvafc","rpp":100,"result_type":"recent"})
 url = prefix+suffix
 
 #read the data
