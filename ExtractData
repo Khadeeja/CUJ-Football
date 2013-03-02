@@ -1,0 +1,13 @@
+#Set up API call
+
+from urllib import urlopen
+
+prefix = "http://search.twitter.com/search.json"
+
+suffix = "?q=#thfcvafc"
+
+url = prefix+suffix
+
+data = urlopen(url).read()
+
+data
