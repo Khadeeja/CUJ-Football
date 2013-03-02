@@ -3,11 +3,10 @@
 from urllib import urlopen
 
 prefix = "http://search.twitter.com/search.json"
-
-suffix = "?q=#thfcvafc"
+suffix = "?"+ urlencode({"q":"#thfcvafc","rpp":100})
 
 url = prefix+suffix
 
 data = urlopen(url).read()
-
-data
+response = loads(data)
+tweets = response["results"]
