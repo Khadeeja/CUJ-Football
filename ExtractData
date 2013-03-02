@@ -1,6 +1,8 @@
 #set up API call
 
+from urllib import urlopen
 from urllib import urlencode
+
 
 #create a url to look for the last 100 search results with #thfcvafc
 
